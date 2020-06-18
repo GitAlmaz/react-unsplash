@@ -12,11 +12,15 @@ export default function NavigationBar() {
 				<ul>
 					<li>
 						<NavLink exact to='/'>
+							<img src="https://image.flaticon.com/icons/svg/967/967652.svg" alt=""/>
 							Main page
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to='/about'>About page</NavLink>
+						<NavLink to='/about'>
+							<img src="https://image.flaticon.com/icons/svg/967/967667.svg" alt=""/>
+							About page
+						</NavLink>
 					</li>
 				</ul>
 			</div>

@@ -1,9 +1,10 @@
 import React from 'react'
+import InputGroup from '../../components/UI/InputGroup'
 
 function MainPage() {
 	return (
 		<div className='main-page'>
-				<h1>main</h1>
+				<InputGroup placeholder="Search..." />
 		</div>
 	)
 }
