@@ -1,0 +1,94 @@
+.header {
+	width: 100%;
+	padding-top: 10px;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	.container {
+		width: 90vw;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__top-bar {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 25px;
+		background: rgba(250, 250, 250, 0.8);
+		backdrop-filter: blur(10px);
+		border-radius: 10px;
+		box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.04);
+		margin-bottom: 10px;
+	}
+	&__logo {
+		width: 40px;
+		height: 40px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	&__navigation {
+		ul {
+			display: flex;
+			align-items: center;
+			li {
+				&:not(:last-child) {
+					margin-right: 20px;
+				}
+				a {
+					color: #333;
+					font-size: 20px;
+					font-weight: bold;
+					position: relative;
+					&::after {
+						content: '';
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						background: #333333;
+						position: absolute;
+						left: 50%;
+						margin-left: -3px;
+						opacity: 0;
+						visibility: hidden;
+						transition: 0.2s ease;
+					}
+					&.active {
+						&::after {
+							visibility: hidden;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__search {
+		position: relative;
+		input {
+			min-width: 350px;
+			padding: 15px 25px;
+			background: rgba(250, 250, 250, 0.8);
+			backdrop-filter: blur(5px);
+			border-radius: 10px;
+			box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.04);
+			border: none;
+			font-size: 18px;
+			outline: none;
+			appearance: none;
+		}
+		label {
+			position: absolute;
+			font-size: 18px;
+			top: 15px;
+			left: 25px;
+			opacity: .5;
+		}
+	}
+}

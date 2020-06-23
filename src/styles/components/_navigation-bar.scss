@@ -17,13 +17,18 @@
 			display: block;
 		}
 	}
+	&__buttons {
+		display: flex;
+		margin-bottom: 20px;
+	}
 	&__toggle-btn {
 		width: 40px;
 		height: 40px;
 		padding: 5px;
 		border-radius: 3px;
-		box-shadow: 0px 2px 15px -4px rgba(0,0,0,.3);
-		background: #f5f5f5;
+		// box-shadow: 0px 2px 15px -4px rgba(0,0,0,.3);
+		box-shadow: 20px 20px 30px rgba(0,0,0,.04);
+		background: #fff;
 		cursor: pointer;
 		margin-bottom: 20px;
 		transition: $transition-primary;
@@ -45,8 +50,9 @@
 	}
 	&__menu-list {
 		border-radius: 3px;
-		box-shadow: 0px 2px 15px -4px rgba(0,0,0,.3);
-		background: #f5f5f5;
+		// box-shadow: 0px 2px 15px -4px rgba(0,0,0,.3);
+		box-shadow: 20px 20px 30px rgba(0,0,0,.04);
+		background: #fff;
 		overflow: hidden;
 		display: none;
 		animation: fadeIn .3s ease-in ;

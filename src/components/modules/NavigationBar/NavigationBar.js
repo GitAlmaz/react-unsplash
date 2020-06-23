@@ -39,33 +39,6 @@ class NavigationBar extends Component {
 						</li>
 					</ul>
 				</div>
-
-				{/* <div className='navigation-bar__user'>
-					<img src='https://image.flaticon.com/icons/svg/2919/2919600.svg' alt='' />
-					<p>Username</p>
-				</div>
-				<div className='navigation-bar__menu'>
-					<ul>
-						<li>
-							<NavLink exact to='/'>
-								<img src='https://image.flaticon.com/icons/svg/967/967652.svg' alt='' />
-								<span>Main page</span>
-							</NavLink>
-						</li>
-						<li>
-							<NavLink to='/about'>
-								<img src='https://image.flaticon.com/icons/svg/967/967667.svg' alt='' />
-								<span>About page</span>
-							</NavLink>
-						</li>
-					</ul>
-				</div>
-				<div className='navigation-bar__arrow' onClick={this.toggleActiveClass}>
-					<img src='https://image.flaticon.com/icons/svg/1246/1246110.svg' alt='' />
-					<p>
-						Свернуть
-					</p>
-				</div> */}
 			</div>
 		)
 	}

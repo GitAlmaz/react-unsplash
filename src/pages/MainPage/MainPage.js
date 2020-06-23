@@ -1,27 +1,26 @@
-import React, { Children } from 'react'
-import WhiteBtn from '../../components/UI/WhiteBtn'
-import Window from '../../components/modules/Window'
+import React, { useState, useEffect } from 'react'
+import Images from '../../components/modules/Images'
+import axios from '../../axios'
 
 function MainPage() {
-	const fuckYou = (event) => {
-		event.preventDefault()
-		console.log('fuck you')
+	const [images, setImages] = useState([])
+	const [query, setQuery] = useState('cloud')
+
+	const fetchImages = async (query, per_page = 16) => {
+		const res = await axios(`search?query=${query}&per_page=${per_page}`)
+		setImages(res.data.photos)
 	}
+
+	useEffect(() => {
+		fetchImages(query)
+	}, [query])
+
 	return (
-		<div className='main-page'>
-			<div className='container'>
-				<div className="main-page__window">
-					<Window />
-				</div>
-				{/* <div className='main-page__top-bar'>
-					<div className='main-page__search'>
-						<input type='text' name='search' id='photos-search' placeholder=' ' />
-						<label htmlFor='photos-search'>Type here ...</label>
+			<div className='main-page'>
+					<div className="container">
+						<Images images={images} />
 					</div>
-					<WhiteBtn text='Search' clickHendler={fuckYou} />
-				</div> */}
 			</div>
-		</div>
 	)
 }
 
