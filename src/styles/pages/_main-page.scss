@@ -4,6 +4,10 @@
 	display: flex;
 	align-items: stretch;
 	padding-top: 120px;
+	overflow: hidden;
+	.container {
+		position: relative;
+	}
 	&__images {
 		// width: 100%;
 		columns: 6;

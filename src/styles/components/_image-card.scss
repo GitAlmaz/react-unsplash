@@ -7,6 +7,7 @@
 	transition: 0.2s ease-in;
 	border-radius: 3px;
 	overflow: hidden;
+	animation: fade-in 0.5s ease-in;
 	&:after {
 		// content: '';
 		width: 100%;
@@ -32,7 +33,6 @@
 		height: auto;
 		object-fit: cover;
 		transition: 0.2s ease-in;
-		// border-radius: 10px;
 	}
 	&:hover {
 		z-index: 1;
@@ -43,5 +43,15 @@
 			visibility: visible;
 			opacity: 1;
 		}
+	}
+}
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
 	}
 }

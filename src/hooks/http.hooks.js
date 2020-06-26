@@ -16,7 +16,7 @@ const useHttp = () => {
 			console.error(error)
 		}
 	}, [])
-	const searchImages = useCallback(async (query ,per_page = 24, page = 1) => {
+	const searchImages = useCallback(async (query, per_page = 24, page = 1) => {
 		setLoading(true)
 		try {
 			const res = await _axios(`search/photos?query=${query}&per_page=${per_page}&page=${page}`)
