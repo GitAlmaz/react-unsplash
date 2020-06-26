@@ -1,0 +1,14 @@
+.card-placeholder {
+	height: 375px;
+	background: linear-gradient(230deg,#a24bcf,#4b79cf,#4bc5cf);
+	background-size: 300% 300%;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	animation: linearGradient 1s ease infinite;
+}
+
+@keyframes linearGradient {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}

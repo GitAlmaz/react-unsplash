@@ -37,7 +37,10 @@ a {
 }
 
 .container {
-	width: 80vw;
+	width: 98vw;
 	max-width: 2000px;
 	margin: 0 auto;
+	@include media($small) {
+		width: 95vw;
+	}
 }

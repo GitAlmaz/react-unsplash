@@ -1,19 +1,13 @@
 import React from 'react'
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
-import MainPage from '../pages/MainPage/MainPage'
-import About from '../pages/About/About'
 import Header from '../components/modules/Header'
+import { MainPageProvider } from '../context/MainPageCtx'
 
-export default function DefaultLayout() {
-	return (
+const DefaultLayout = props => (
+	<MainPageProvider>
 		<main className='default-layout'>
-			<Router>
-				<Header />
-				<Switch>
-					<Route exact path='/' component={MainPage} />
-					<Route path='/about' component={About} />
-				</Switch>
-			</Router>
+			<Header />
+			{props.children}
 		</main>
-	)
-}
+	</MainPageProvider>
+)
+export default DefaultLayout

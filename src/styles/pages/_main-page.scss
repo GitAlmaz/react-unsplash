@@ -3,7 +3,25 @@
 	min-height: 100vh;
 	display: flex;
 	align-items: stretch;
-	.container {
-		
+	padding-top: 120px;
+	&__images {
+		// width: 100%;
+		columns: 6;
+		min-height: 80vh;
+		.image-card {
+			margin-bottom: 10px;
+		}
+		@include media($desktop) {
+			columns: 4;
+		}
+		@include media($laptop) {
+			columns: 3;
+		}
+		@include media($middle) {
+			columns: 2;
+		}
+		@include media($small) {
+			columns: 1;
+		}
 	}
 }

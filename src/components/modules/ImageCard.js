@@ -1,16 +1,8 @@
-import React, { useContext } from 'react'
-import Context from '../../context/MainPageContext'
+import React from 'react'
 
-
-export default ({ data }) => {
-
-	const val = useContext(Context)
-	console.log(val);
-	
-	return (
-		<div className='image-card'>
-			<img className='image-card__back' src={data.src.medium} alt='' />
-			<span className='image-card__blur'></span>
-		</div>
-	)
-}
+export default ({ data }) => (
+	<div className='image-card'>
+		<img className='image-card__back' src={data.urls.small} alt='' />
+		<span className='image-card__blur'></span>
+	</div>
+)

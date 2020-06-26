@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
 import { NavLink } from 'react-router-dom'
+import { Ctx } from '../../context/MainPageCtx'
 
 function Header() {
+	const [inputVal, setInputVal] = useState('')
+	const { setQueryHook } = useContext(Ctx)
+	const submitHandler = e => {
+		e.preventDefault()
+		setQueryHook(inputVal)
+	}
+
 	return (
 		<header className='header header--main'>
 			<div className='container'>
@@ -22,10 +30,19 @@ function Header() {
 						</ul>
 					</div>
 				</div>
-				<div className='header__search'>
-					<input type="text" name="main-search" id="main-search"/>
-					<label htmlFor="main-search">Search</label>
-				</div>
+				<form className='header__search' onSubmit={submitHandler}>
+					<input
+						type='text'
+						name='main-search'
+						id='main-search'
+						autoComplete='off'
+						placeholder=' '
+						onInput={e => {
+							setInputVal(e.target.value)
+						}}
+					/>
+					<label htmlFor='main-search'>Search</label>
+				</form>
 			</div>
 		</header>
 	)

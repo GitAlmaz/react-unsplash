@@ -1,12 +1,14 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import './styles/main.scss'
-import DefaultLayout from './layouts/DefaultLayout'
+import { useRoutes } from './routes/routes'
 
 function App() {
+	const routes = useRoutes(true)
 	return (
-		<div className='App'>
-			<DefaultLayout />
-		</div>
+		<Router>
+			<div className='App'>{routes}</div>
+		</Router>
 	)
 }
 

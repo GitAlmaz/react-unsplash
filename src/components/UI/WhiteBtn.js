@@ -1,10 +1,8 @@
 import React from 'react'
 
 function WhiteBtn(props) {
-
-
 	return (
-		<button className="btn btn--white" onClick={props.clickHendler} >
+		<button className='btn btn--white' onClick={props.clickHendler}>
 			<span>{props.text}</span>
 		</button>
 	)
