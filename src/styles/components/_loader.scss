@@ -7,19 +7,44 @@
 	position: absolute;
 	left: 0;
 	&__item {
-		width: 50%;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		position: absolute;
-		left: 0;
-		height: 4px;
+		top: 50px;
+		left: 50%;
+		margin-left: -100px;
 		background: linear-gradient(90deg,#a24bcf,#4b79cf,#4bc5cf);
-		animation: move-in-out 1.5s ease-in-out infinite;
+		animation: move-in-out 1.5s linear infinite;
+		&::after {
+			content: '';
+			width: 95%;
+			height: 95%;
+			background: #fff;
+			border-radius: 50%;
+			animation: looping 1.5s ease-in-out infinite;
+		}
 	}
 }
 @keyframes move-in-out {
 	from {
-		transform: translateX(-100%);
+		transform: rotate(0);
 	}
 	to {
-		transform: translateX(100vw);
+		transform: rotate(360deg);
+	}
+}
+@keyframes looping {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1);
 	}
 }

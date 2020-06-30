@@ -17,6 +17,19 @@ function Header() {
 					<div className='header__logo'>
 						<img src='https://image.flaticon.com/icons/png/512/2111/2111425.png' alt='' />
 					</div>
+					<form className='header__search' onSubmit={submitHandler}>
+						<input
+							type='text'
+							name='main-search'
+							id='main-search'
+							autoComplete='off'
+							placeholder=' '
+							onInput={e => {
+								setInputVal(e.target.value)
+							}}
+						/>
+						<label htmlFor='main-search'>Search</label>
+					</form>
 					<div className='header__navigation'>
 						<ul>
 							<li>
@@ -30,19 +43,6 @@ function Header() {
 						</ul>
 					</div>
 				</div>
-				<form className='header__search' onSubmit={submitHandler}>
-					<input
-						type='text'
-						name='main-search'
-						id='main-search'
-						autoComplete='off'
-						placeholder=' '
-						onInput={e => {
-							setInputVal(e.target.value)
-						}}
-					/>
-					<label htmlFor='main-search'>Search</label>
-				</form>
 			</div>
 		</header>
 	)

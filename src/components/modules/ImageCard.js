@@ -14,7 +14,7 @@ export default ({ data }) => {
 	
 	useEffect(() => {
 		checkLoadImage()
-	}, [])
+	})
 
 	return !loading ? (
 		<div className='image-card'>
