@@ -1,0 +1,79 @@
+{
+	"emmet.triggerExpansionOnTab": true,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"explorer.confirmDragAndDrop": false,
+	"editor.wordWrap": "on",
+	"editor.cursorWidth": 2,
+	"breadcrumbs.enabled": false,
+	"editor.minimap.enabled": false,
+	"explorer.confirmDelete": false,
+	"window.zoomLevel": 0,
+	"workbench.startupEditor": "newUntitledFile",
+	"zenMode.hideLineNumbers": false,
+	"zenMode.hideStatusBar": false,
+	"workbench.colorCustomizations": {
+		"editor.background": "#242424",
+		"titleBar.activeBackground": "#3b3b3c",
+		"sideBar.dropBackground": "#fff",
+		"sideBar.background": "#2d2d2d",
+		"sideBar.border": "#242424",
+		"editorGutter.background": "#2d2d2d",
+		"editor.lineHighlightBackground": "#2d2d2d",
+		"terminal.background": "#2d2d2d",
+		"editorGroupHeader.tabsBackground": "#2d2d2d",
+		"panel.background": "#2d2d2d"
+	},
+	"prettier.jsxSingleQuote": true,
+	"prettier.useTabs": true,
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.fontSize": 17,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.occurrencesHighlight": false,
+	"better-comments.highlightPlainText": true,
+	"bracketPairColorizer.highlightActiveScope": true,
+	"editor.fontFamily": "DejaVu Sans Mono, Monaco,Menlo,  'Courier New', monospace",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.smoothScrolling": true,
+	"workbench.activityBar.visible": false,
+	"workbench.statusBar.visible": true,
+	"editor.cursorSmoothCaretAnimation": true,
+	"html.mirrorCursorOnMatchingTag": true,
+	"terminal.integrated.cursorStyle": "line",
+	"prettier.printWidth": 140,
+	"terminal.integrated.fontSize": 16,
+	"editor.renderIndentGuides": false,
+	"editor.renderWhitespace": "none",
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"vetur.format.options.useTabs": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"prettier.singleQuote": true,
+	"prettier.semi": false,
+	"prettier.proseWrap": "always",
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.sideBar.location": "left",
+	"prettier.trailingComma": "none",
+	"editor.renderControlCharacters": false,
+	"workbench.colorTheme": "dark-plus-syntax",
+	"prettier.arrowParens": "avoid",
+	"bracketPairColorizer.showHorizontalScopeLine": false,
+	"bracketPairColorizer.showVerticalScopeLine": false,
+	"editor.matchBrackets": "never",
+	"bracketPairColorizer.activeScopeCSS": ["borderStyle : solid", "borderWidth : 1px", "borderColor : {color}; opacity: 0"],
+	"editor.parameterHints.enabled": false,
+	"editor.fontLigatures": false,
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.glyphMargin": false,
+	"scm.diffDecorationsGutterWidth": 1
+}
